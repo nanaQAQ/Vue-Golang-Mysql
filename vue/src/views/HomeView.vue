@@ -1,13 +1,11 @@
 <template>
-  <div class="home">
+  <div class="table-container">
     <StatusTable/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import StatusTable from "@/components/StatusTable.vue";
-
 export default {
   name: 'HomeView',
   components: {
@@ -15,3 +13,9 @@ export default {
   }
 }
 </script>
+
+<style>
+  .table-container{
+    width: 50%;
+  }
+</style>

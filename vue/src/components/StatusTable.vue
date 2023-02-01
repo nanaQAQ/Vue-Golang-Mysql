@@ -1,35 +1,18 @@
 <template>
-  <el-table class="table"
-      :data="Data"
-      border
-      style="width: 100%">
-    <el-table-column
-        fixed
-        prop="user_id"
-        label="用户编号"
-        width="120">
+  <el-table class="table" :data="Data" border align="center">
+    <el-table-column fixed prop="user_id" label="用户编号" width="80" align="center">
     </el-table-column>
-    <el-table-column
-        prop="username"
-        label="用户名"
-        width="120">
+    <el-table-column prop="username" label="用户名" width="120" align="center">
     </el-table-column>
-    <el-table-column
-        prop="email"
-        label="邮箱"
-        width="150">
+    <el-table-column prop="email" label="邮箱" width="180" align="center">
     </el-table-column>
-    <el-table-column
-        prop="sex"
-        label="性别"
-        width="120">
+    <el-table-column prop="sex" label="性别" align="center">
     </el-table-column>
   </el-table>
 </template>
 
 <script>
 import axios from "axios";
-
 export default {
   data() {
     return {
@@ -42,9 +25,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  .table{
-    margin: auto;
-  }
-</style>
